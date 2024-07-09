@@ -1,0 +1,41 @@
+@import "styles/header";
+
+:root {
+  --text-color-primary: #5a5a5e;
+  --text-color-primary-hover: black;
+  --text-color-secondary: #fe6438;
+  --text-color-secondary-20: #fe633833;
+  --white: white;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.container {
+  box-sizing: border-box;
+  width: 100vw;
+  padding: 0 18.2vw 0 18.2vw;
+}
+
+@media (max-width: 1280px) {
+  .container {
+    padding: 0 10vw 0 10vw;
+  }
+}
+
+@media (max-width: 414px) {
+  .container {
+    padding: 0 2rem 0 2rem;
+  }
+}
