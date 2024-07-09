@@ -1,0 +1,137 @@
+header.active {
+  position: fixed;
+}
+
+.header {
+  box-sizing: border-box;
+  width: 100%;
+  height: 7.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  gap: 4rem;
+
+  &.active {
+    height: 100vh;
+    background-color: var(--white);
+    justify-content: flex-start;
+    gap: 10rem;
+  }
+
+  &-subsection {
+    display: flex;
+    align-items: center;
+  }
+
+  &-icon {
+    &__link {
+      height: fit-content;
+    }
+    &__icon {
+      max-width: 23.7rem;
+      width: 100%;
+    }
+  }
+
+  &-menu {
+    display: flex;
+    list-style-type: none;
+    gap: 3rem;
+    min-width: fit-content;
+
+    &.active {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__item {
+      color: var(--text-color-primary);
+      font: 700 1.6rem/2.2rem "Satoshi";
+      text-decoration: none;
+      display: flex;
+
+      &:hover {
+        color: var(--text-color-primary-hover);
+      }
+    }
+  }
+
+  &__button {
+    width: 15.8rem;
+    height: 4.8rem;
+    background-color: transparent;
+    border-radius: 40px;
+    border: 1px solid var(--text-color-secondary);
+    color: var(--text-color-secondary);
+    font: 700 1.6rem/2.2rem "Satoshi";
+    cursor: pointer;
+    padding: 0 1rem 0 1rem;
+
+    &.active {
+      display: block;
+    }
+
+    &:hover {
+      background-color: var(--text-color-secondary-20);
+    }
+  }
+
+  &__toggle {
+    display: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header {
+    gap: 2rem;
+
+    &-menu {
+      gap: 2rem;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .header {
+    flex-direction: column;
+
+    &-subsection {
+      min-height: 7.6rem;
+      width: 100%;
+      justify-content: space-between;
+    }
+
+    &__toggle {
+      display: flex;
+      align-items: center;
+    }
+    &-menu {
+        display: none;
+        gap: 3rem;
+      }
+  
+      &__button {
+        display: none;
+      }
+  }
+}
+
+@media (max-width: 414px) {
+  .header {
+    height: 5.2rem;
+
+    &-subsection {
+      min-height: 5.2rem;
+    }
+
+    &-icon {
+      &__icon {
+        max-width: 13.5rem;
+      }
+    }
+  }
+}
