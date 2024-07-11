@@ -1,0 +1,235 @@
+.what-we-do {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+
+  &-info {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    max-width: 49.2rem;
+
+    &__title {
+      font: 700 7.2rem/7.9rem "Satoshi";
+    }
+
+    &-text {
+      color: var(--text-color-primary);
+      font: 500 2.8rem/3.8rem "Satoshi";
+
+      &__img {
+        display: flex;
+        align-items: center;
+        max-width: 2.5rem;
+      }
+
+      & img {
+        max-width: 2.5rem;
+      }
+    }
+    
+    &__button {
+      max-width: 17.1rem;
+      width: 100%;
+      height: 6rem;
+    }
+  }
+
+  &-images {
+    height: 46.8vw;
+    min-width: 52.7vw;
+    position: relative;
+
+    &__element {
+      position: absolute;
+      height: 24.5%;
+
+      &-1 {
+        top: 10.7%;
+        left: 21%;
+      }
+
+      &-2 {
+        top: 3.1%;
+        left: 59.3%;
+      }
+
+      &-3 {
+        top: 15.6%;
+        right: 0;
+      }
+
+      &-4 {
+        top: 55.3%;
+        right: 2.2%;
+      }
+
+      &-5 {
+        top: 72%;
+        left: 34.6%;
+      }
+
+      &-6 {
+        top: 51.5%;
+        left: 5.3%;
+      }
+
+      &-7 {
+        top: 39.3%;
+        left: 44.6%;
+      }
+
+      &-8 {
+        top: 46%;
+        left: 40%;
+        scale: 2.3;
+        z-index: -1;
+      }
+
+      &-9 {
+        top: 38%;
+        left: 40%;
+        scale: 3.7;
+        z-index: -1;
+      }
+    }
+
+    &__circle {
+      position: absolute;
+      aspect-ratio: 1/1;
+      border-radius: 100%;
+      z-index: -1;
+      filter: blur(60px);
+
+      &-1 {
+        background-image: radial-gradient(#6bc362, #72d07400);
+        height: 10rem;
+        top: 18.9%;
+        left: 25.6%;
+      }
+
+      &-2 {
+        background-image: radial-gradient(#ab3ef5, #ac3ef500);
+        height: 31.4%;
+        top: 38.5%;
+        left: 45.4%;
+      }
+
+      &-3 {
+        background-image: radial-gradient(#fe6438, #fe633800);
+        height: 24.7%;
+        top: 55.4%;
+        left: 29.8%;
+      }
+
+      &-4 {
+        background-image: radial-gradient(#ab3ef5, #ac3ef500);
+        height: 31.4%;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+}
+
+.what-we-do-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+
+  &-info {
+    max-width: 49.1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    flex-wrap: wrap;
+
+    &-button-container {
+      display: flex;
+      gap: 1.1rem;
+    }
+
+    &__button {
+      &-primary {
+        height: 6rem;
+        max-width: 30.5rem;
+        width: 100%;
+        min-width: fit-content;
+      }
+
+      &-secondary {
+        height: 6rem;
+        max-width: 17.5rem;
+        width: 100%;
+        min-width: fit-content;
+      }
+    }
+  }
+
+  &-image {
+    width: 31vw;
+
+    &-container {
+      position: relative;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .what-we-do {
+    min-height: auto;
+    flex-direction: column-reverse;
+    gap: 4rem;
+
+    &-images {
+      height: 88.9vw;
+      min-width: 100%;
+    }
+  }
+
+  .what-we-do-2 {
+    flex-direction: column;
+
+    &-image {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .what-we-do {
+    &-images {
+      height: 88.9vw;
+      min-width: 100%;
+    }
+
+    &-info {
+      padding: 0 2rem 0 2rem;
+    }
+  }
+
+  .what-we-do-2 {
+    &-info {
+      &-button-container {
+        flex-wrap: wrap;
+      }
+    }
+  }
+}
+
+@media (max-width: 414px) {
+  .what-we-do {
+    &-info {
+      &__title {
+        font: 700 3rem/3.3rem "Satoshi";
+      }
+
+      &-text {
+        font: 500 1.6rem/2.2rem "Satoshi";
+      }
+    }
+  }
+}
