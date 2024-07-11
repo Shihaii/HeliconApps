@@ -60,20 +60,10 @@ header.active {
   &__button {
     width: 15.8rem;
     height: 4.8rem;
-    background-color: transparent;
-    border-radius: 40px;
-    border: 1px solid var(--text-color-secondary);
-    color: var(--text-color-secondary);
     font: 700 1.6rem/2.2rem "Satoshi";
-    cursor: pointer;
-    padding: 0 1rem 0 1rem;
 
     &.active {
       display: block;
-    }
-
-    &:hover {
-      background-color: var(--text-color-secondary-20);
     }
   }
 
