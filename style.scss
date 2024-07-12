@@ -1,11 +1,18 @@
 @import "styles/header";
+@import "styles/what-we-do";
+@import "styles/our-projects";
+@import "styles/testimonials";
 
 :root {
   --text-color-primary: #5a5a5e;
   --text-color-primary-hover: black;
   --text-color-secondary: #fe6438;
   --text-color-secondary-20: #fe633833;
+  --text-color-secondary-darker: #ef4e22;
+  --tag-color: #97979B;
   --white: white;
+  --title-gradient-start: #1d1d1f;
+  --title-gradient-end: #78787d;
 }
 
 html {
@@ -22,20 +29,175 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+h2 {
+  font: 700 4.8rem/5.5rem "Satoshi";
+  background: linear-gradient(
+    to right,
+    var(--title-gradient-start),
+    var(--title-gradient-end)
+  );
+  background-clip: text;
+  color: transparent;
+}
+
+h3 {
+  font: 700 2.2rem/2.4rem "Satoshi";
+  background: linear-gradient(
+    to right,
+    var(--title-gradient-start),
+    var(--title-gradient-end)
+  );
+  background-clip: text;
+  color: transparent;
+}
+
 .container {
   box-sizing: border-box;
   width: 100vw;
   padding: 0 18.2vw 0 18.2vw;
+
+  &-right {
+    padding: 0 0 0 18.2vw;
+  }
+}
+
+.button {
+  &-primary {
+    box-sizing: border-box;
+    border-radius: 40px;
+    cursor: pointer;
+    padding: 0 1rem 0 1rem;
+
+    background-color: transparent;
+    border: 1px solid var(--text-color-secondary);
+    color: var(--text-color-secondary);
+    font: 700 1.8rem/2.4rem "Satoshi";
+
+    &:hover {
+      background-color: var(--text-color-secondary-20);
+    }
+  }
+
+  &-secondary {
+    box-sizing: border-box;
+    border-radius: 40px;
+    cursor: pointer;
+    padding: 0 1rem 0 1rem;
+
+    background-color: var(--text-color-secondary);
+    border: none;
+    color: var(--white);
+    font: 700 1.8rem/2.4rem "Satoshi";
+
+    &:hover {
+      background-color: var(--text-color-secondary-darker);
+    }
+  }
+}
+
+.margin-top {
+  &-8 {
+    margin-top: 8.3rem;
+  }
+  
+  &-20 {
+    margin-top: 20rem;
+  }
+}
+
+.bg{
+  &-white{
+    background-color: var(--white);
+  }
+}
+
+.swiper {
+  &-pagination {
+    &-bullets {
+      display: flex !important;
+      gap: 1.2rem !important;
+      width: fit-content !important;
+      height: 5.4rem !important;
+      align-items: center;
+      background-color: rgba(245, 244, 245, 1);
+      border-radius: 5.2rem;
+      padding: 0 3.1rem 0 3.1rem;
+    }
+
+    &-bullet {
+      height: 0.6rem !important;
+      width: 0.6rem !important;
+      margin: 0 0 0 0 !important;
+
+      &-active {
+        width: 2.4rem !important;
+        border-radius: 2.4rem !important;
+        background-color: var(--text-color-secondary) !important;
+      }
+    }
+  }
+}
+
+.slider {
+  margin: 4rem 0 4rem 0;
+
+  &-container {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  &-title-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-button-container {
+    display: flex;
+    gap: 1rem;
+  }
+
+  &__button {
+    border: none;
+    background-color: transparent;
+    border-radius: 100%;
+    width: 6rem;
+    height: 6rem;
+
+    &:hover {
+      cursor: pointer;
+      background-color: var(--text-color-secondary-20);
+    }
+  }
 }
 
 @media (max-width: 1280px) {
   .container {
     padding: 0 10vw 0 10vw;
+
+    &-right {
+      padding: 0 0 0 10vw;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    &-right {
+      padding: 0 0 0 0;
+    }
   }
 }
 
 @media (max-width: 414px) {
+  h2 {
+    font: 700 3rem/3.3rem "Satoshi";
+  }
+
   .container {
     padding: 0 2rem 0 2rem;
+
+    &-right {
+      padding: 0 0 0 0;
+    }
   }
 }
