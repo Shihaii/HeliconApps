@@ -6,6 +6,10 @@
     <title>HeliconApps</title>
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <header>
@@ -106,7 +110,9 @@
     <div class="container margin-top-8">
       <div class="what-we-do-2">
         <div class="what-we-do-2-image-container">
-          <div class="what-we-do-images__circle what-we-do-images__circle-4"></div>
+          <div
+            class="what-we-do-images__circle what-we-do-images__circle-4"
+          ></div>
           <img class="what-we-do-2-image" src="assets/phone.svg" />
         </div>
         <div class="what-we-do-2-info">
@@ -130,11 +136,105 @@
       </div>
     </div>
 
+    <div class="container margin-top-20">
+      <div class="slider-container">
+        <div class="slider-title-container">
+          <h2>Our Projects</h2>
+          <div class="slider-button-container">
+            <button
+              id="our-projects-slider__button-prev"
+              class="slider__button"
+            >
+              <img src="assets/slider-button-prev.svg" /></button
+            ><button
+              id="our-projects-slider__button-next"
+              class="slider__button"
+            >
+              <img src="assets/slider-button-next.svg" />
+            </button>
+          </div>
+        </div>
+        <div id="our-projects-slider" class="slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="our-projects-card">
+                <img
+                  class="our-projects-card__image"
+                  src="assets/our-project-1.jpg"
+                />
+                <h3 class="our-projects-card__title">Project Name</h3>
+                <p class="our-projects-card__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aenean euismod bibendum laoreet.
+                </p>
+                <a class="our-projects-card__link" href="#"
+                  >View on the App Store<img src="assets/link-arrow.svg"
+                /></a>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="our-projects-card">
+                <img
+                  class="our-projects-card__image"
+                  src="assets/our-project-2.jpg"
+                />
+                <h3 class="our-projects-card__title">Project Name</h3>
+                <p class="our-projects-card__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aenean euismod bibendum laoreet.
+                </p>
+                <a class="our-projects-card__link" href="#"
+                  >View on the App Store<img src="assets/link-arrow.svg"
+                /></a>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="our-projects-card">
+                <img
+                  class="our-projects-card__image"
+                  src="assets/our-project-3.jpg"
+                />
+                <h3 class="our-projects-card__title">Project Name</h3>
+                <p class="our-projects-card__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aenean euismod bibendum laoreet.
+                </p>
+                <a class="our-projects-card__link" href="#"
+                  >View on the App Store<img src="assets/link-arrow.svg"
+                /></a>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="our-projects-card">
+                <img
+                  class="our-projects-card__image"
+                  src="assets/our-project-1.jpg"
+                />
+                <h3 class="our-projects-card__title">Project Name</h3>
+                <p class="our-projects-card__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aenean euismod bibendum laoreet.
+                </p>
+                <a class="our-projects-card__link" href="#"
+                  >View on the App Store<img src="assets/link-arrow.svg"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="our-projects-slider-dots" class="slider-dots"></div>
+      </div>
+    </div>
+
     <script
       src="https://code.jquery.com/jquery-3.7.1.js"
       integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module" src="script.js"></script>
   </body>
 </html>
