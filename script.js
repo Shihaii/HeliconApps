@@ -2,6 +2,10 @@ function toggleMenu() {
   $(document).on("click", "#header__toggle", function () {
     $("header, #header, #header-menu, #header__button").toggleClass("active");
   });
+
+  $(document).on("click", ".header-menu__item", function () {
+    $("header, #header, #header-menu, #header__button").removeClass("active");
+  });
 }
 
 function initSliders() {
