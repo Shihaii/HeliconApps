@@ -105,6 +105,12 @@ h3 {
   }
 }
 
+.bg{
+  &-white{
+    background-color: var(--white);
+  }
+}
+
 .swiper {
   &-pagination {
     &-bullets {
