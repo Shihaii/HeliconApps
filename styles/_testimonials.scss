@@ -1,0 +1,59 @@
+.testimonials {
+  &-card {
+    box-sizing: border-box;
+    border-radius: 3rem;
+    padding: 3.2rem 2.4rem 3.2rem 2.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    box-shadow: 1rem 2.1rem 50rem 0.4rem rgba(0, 0, 0, 0.06);
+
+    &:hover {
+      cursor: pointer;
+      .testimonials {
+        &-card {
+          &-author {
+            &-text-container {
+              &__name {
+                color: var(--title-gradient-start);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &__text {
+      font: 500 1.6rem/2.2rem "Satoshi";
+      color: var(--text-color-primary);
+    }
+
+    &-author {
+      display: flex;
+      gap: 1.4rem;
+      align-items: center;
+
+      &__profile-picture {
+        min-width: 4.8rem;
+        min-height: 4.8rem;
+        border-radius: 100%;
+      }
+
+      &-text-container {
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+
+        &__name {
+          font: 700 1.8rem/2.5rem "Satoshi";
+          color: var(--text-color-primary);
+        }
+
+        &__profession {
+          font: 700 1.6rem/2.2rem "Satoshi";
+          color: var(--tag-color);
+        }
+      }
+    }
+  }
+}

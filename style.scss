@@ -1,6 +1,7 @@
 @import "styles/header";
 @import "styles/what-we-do";
 @import "styles/our-projects";
+@import "styles/testimonials";
 
 :root {
   --text-color-primary: #5a5a5e;
@@ -8,6 +9,7 @@
   --text-color-secondary: #fe6438;
   --text-color-secondary-20: #fe633833;
   --text-color-secondary-darker: #ef4e22;
+  --tag-color: #97979B;
   --white: white;
   --title-gradient-start: #1d1d1f;
   --title-gradient-end: #78787d;
