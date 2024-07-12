@@ -1,5 +1,6 @@
 @import "styles/header";
 @import "styles/what-we-do";
+@import "styles/our-projects";
 
 :root {
   --text-color-primary: #5a5a5e;
@@ -28,6 +29,17 @@ body::-webkit-scrollbar {
 
 h2 {
   font: 700 4.8rem/5.5rem "Satoshi";
+  background: linear-gradient(
+    to right,
+    var(--title-gradient-start),
+    var(--title-gradient-end)
+  );
+  background-clip: text;
+  color: transparent;
+}
+
+h3 {
+  font: 700 2.2rem/2.4rem "Satoshi";
   background: linear-gradient(
     to right,
     var(--title-gradient-start),
@@ -81,8 +93,73 @@ h2 {
   }
 }
 
-.margin-top-8 {
-  margin-top: 8.3rem;
+.margin-top {
+  &-8 {
+    margin-top: 8.3rem;
+  }
+  
+  &-20 {
+    margin-top: 20rem;
+  }
+}
+
+.swiper {
+  &-pagination {
+    &-bullets {
+      display: flex !important;
+      gap: 1.2rem !important;
+      width: fit-content !important;
+      height: 5.4rem !important;
+      align-items: center;
+      background-color: rgba(245, 244, 245, 1);
+      border-radius: 5.2rem;
+      padding: 0 3.1rem 0 3.1rem;
+    }
+
+    &-bullet {
+      height: 0.6rem !important;
+      width: 0.6rem !important;
+      margin: 0 0 0 0 !important;
+
+      &-active {
+        width: 2.4rem !important;
+        border-radius: 2.4rem !important;
+        background-color: var(--text-color-secondary) !important;
+      }
+    }
+  }
+}
+
+.slider {
+  margin: 4rem 0 4rem 0;
+
+  &-container {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  &-title-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-button-container {
+    display: flex;
+    gap: 1rem;
+  }
+
+  &__button {
+    border: none;
+    background-color: transparent;
+    border-radius: 100%;
+    width: 6rem;
+    height: 6rem;
+
+    &:hover {
+      cursor: pointer;
+      background-color: var(--text-color-secondary-20);
+    }
+  }
 }
 
 @media (max-width: 1280px) {
