@@ -2,6 +2,7 @@
 @import "styles/what-we-do";
 @import "styles/our-projects";
 @import "styles/testimonials";
+@import "styles/faq";
 
 :root {
   --text-color-primary: #5a5a5e;
@@ -13,6 +14,7 @@
   --white: white;
   --title-gradient-start: #1d1d1f;
   --title-gradient-end: #78787d;
+  --border-gray: #212121;
 }
 
 html {

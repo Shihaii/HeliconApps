@@ -1,0 +1,46 @@
+.faq{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+
+    &-details-container{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+
+        &-item{
+            padding: 0 0 3rem 0;
+            border-bottom: 1px solid var(--border-gray);
+
+            &[open]{
+                .faq{
+                    &-details-container{
+                        &-item{
+                            &__title{
+                                &::after{
+                                    content: url("assets/details-close.svg");
+                                }
+                            }
+                        }
+                    }
+                }
+            } 
+
+            &__title{
+                display: flex;
+                justify-content: space-between;
+                cursor: pointer;
+    
+                &::after{
+                    content: url("assets/details-open.svg");
+                }
+            }
+
+            &__text{
+                margin: 1.4rem 0 0 0;
+                color: var(--text-color-primary);
+                font: 500 1.8rem/2.5rem "Satoshi";
+            }
+        }
+    }
+}
