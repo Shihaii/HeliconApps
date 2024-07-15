@@ -1,0 +1,69 @@
+.footer {
+  display: flex;
+  gap: 4.9rem;
+
+  &-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+  }
+
+  &__text {
+    font: 500 1.6rem/2.2rem "Satoshi";
+    color: var(--tag-color);
+
+    &-selected {
+      color: var(--text-color-primary);
+    }
+  }
+
+  &__email {
+    font: 700 3rem/3.3rem "Satoshi";
+    color: var(--border-gray);
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .footer {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 800px) {
+  .footer {
+    &-container {
+      .header {
+        align-items: start;
+        height: fit-content;
+
+        &-menu {
+          display: flex;
+          flex-wrap: wrap;
+          
+          &__item {
+            min-width: fit-content;
+          }
+        }
+
+        &__button {
+          display: block;
+        }
+
+        &-icon {
+          &__icon {
+            max-width: 23.7rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 414px) {
+  .footer {
+    &__email {
+      font: 700 2.5rem/2.8rem "Satoshi";
+    }
+  }
+}
