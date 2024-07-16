@@ -1,6 +1,7 @@
 @import "styles/header";
 @import "styles/what-we-do";
 @import "styles/our-projects";
+@import "styles/pricing";
 @import "styles/testimonials";
 @import "styles/faq";
 @import "styles/footer";
@@ -11,11 +12,15 @@
   --text-color-secondary: #fe6438;
   --text-color-secondary-20: #fe633833;
   --text-color-secondary-darker: #ef4e22;
+  --text-color-secondary-lighter: #FFB19B;
   --tag-color: #97979b;
   --white: white;
   --title-gradient-start: #1d1d1f;
   --title-gradient-end: #78787d;
   --border-gray: #212121;
+  --radio-border: #747d8c33;
+  --gray-10: #f5f4f5;
+
 }
 
 html {
