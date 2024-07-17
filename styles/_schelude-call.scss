@@ -73,3 +73,13 @@
     }
   }
 }
+
+@media (max-width: 414px){
+  .schelude-call{
+    &__circle{
+      &-1{
+        right: -2rem;
+      }
+    }
+  }
+}
