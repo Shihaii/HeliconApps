@@ -1,4 +1,14 @@
 .testimonials {
+  &__circle{
+    top: -17rem;
+    left: -11.1rem;
+    height: 22.2rem;
+
+    &.decorative-element__circle{
+      filter: blur(140px);
+    }
+  }
+
   &-card {
     box-sizing: border-box;
     border-radius: 3rem;
