@@ -2,6 +2,7 @@
 @import "styles/what-we-do";
 @import "styles/our-projects";
 @import "styles/pricing";
+@import "styles/schelude-call";
 @import "styles/testimonials";
 @import "styles/faq";
 @import "styles/footer";
@@ -12,7 +13,7 @@
   --text-color-secondary: #fe6438;
   --text-color-secondary-20: #fe633833;
   --text-color-secondary-darker: #ef4e22;
-  --text-color-secondary-lighter: #FFB19B;
+  --text-color-secondary-lighter: #ffb19b;
   --tag-color: #97979b;
   --white: white;
   --title-gradient-start: #1d1d1f;
@@ -20,7 +21,6 @@
   --border-gray: #212121;
   --radio-border: #747d8c33;
   --gray-10: #f5f4f5;
-
 }
 
 html {
@@ -68,6 +68,10 @@ h3 {
   box-sizing: border-box;
   width: 100vw;
   padding: 0 18.2vw 0 18.2vw;
+
+  &-relative {
+    position: relative;
+  }
 
   &-right {
     padding: 0 0 0 18.2vw;
@@ -167,8 +171,10 @@ h3 {
   margin: 4rem 0 4rem 0;
 
   &-container {
+    position: relative;
     width: 100%;
     overflow: hidden;
+    padding-bottom: 20rem;
   }
 
   &-title-container {
@@ -267,35 +273,6 @@ h3 {
 
     &-orange {
       background-image: radial-gradient(#fe6438, #fe633800);
-    }
-  }
-
-  &-schelude-call {
-    &-line {
-      &__1 {
-        top: -18rem;
-        right: 0;
-        width: 51vw;
-        // width: 100%;
-      }
-
-      &__2 {
-        top: -37rem;
-        right: 0;
-        width: 54.6vw;
-        // width: 100%;
-      }
-    }
-
-    &-circle {
-      &__1 {
-      }
-
-      &__2 {
-      }
-
-      &__3 {
-      }
     }
   }
 }
