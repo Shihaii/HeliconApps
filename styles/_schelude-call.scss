@@ -46,6 +46,16 @@
   }
 }
 
+@media (max-width: 1280px){
+  .schelude-call{
+    &__circle{
+      &-1{
+        right: -10vw;
+      }
+    }
+  }
+}
+
 @media (max-width: 1024px) {
   .schelude-call {
     &__line {
