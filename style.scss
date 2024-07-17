@@ -47,6 +47,7 @@ h2 {
   );
   background-clip: text;
   color: transparent;
+  align-self: center;
 }
 
 h3 {
@@ -180,6 +181,8 @@ h3 {
   &-title-container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 1rem;
   }
 
   &-button-container {

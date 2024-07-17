@@ -234,20 +234,22 @@
         gap: 2rem;
 
         &-2 {
+          gap: 2rem;
           &__radio-container {
             flex-wrap: wrap;
           }
         }
 
         &-3 {
+          gap: 2rem;
           &__radio-container {
             flex-direction: column;
           }
         }
 
         &__title {
-          min-width: 8rem;
-          max-width: 8rem;
+          min-width: 7rem;
+          max-width: 7rem;
         }
       }
     }
